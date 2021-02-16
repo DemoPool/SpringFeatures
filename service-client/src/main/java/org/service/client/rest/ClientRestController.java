@@ -1,12 +1,3 @@
-/*******************************************************************************
- * SpringFeatures
- * Copyright (C) 2018 Lars Helmuth Probst - All Rights Reserved.
- *
- * @author Lars Helmuth Probst (Alienuser)
- * @copyright 2018 Lars Helmuth Probst
- * @link https://www.Lars-Probst.de
- ******************************************************************************/
-
 package org.service.client.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,5 +41,4 @@ public class ClientRestController {
     public List<ServiceInstance> serviceInstancesByApplicationName(@PathVariable String applicationName) {
         return this.discoveryClient.getInstances(applicationName);
     }
-
 }

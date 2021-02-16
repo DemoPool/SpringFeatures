@@ -1,12 +1,3 @@
-/*******************************************************************************
- * SpringFeatures
- * Copyright (C) 2018 Lars Helmuth Probst - All Rights Reserved.
- *
- * @author Lars Helmuth Probst (Alienuser)
- * @copyright 2018 Lars Helmuth Probst
- * @link https://www.Lars-Probst.de
- ******************************************************************************/
-
 package org.service.addressbook.rest;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
@@ -92,8 +83,8 @@ public class AddressbookRestController {
         LOG.log(Level.INFO, "### Circuit Breaker. Service people is not availabl. Alternative method is called.");
         List<ModelPerson> listPerson = new ArrayList<>();
         ModelPerson modelPerson = new ModelPerson();
-        modelPerson.setFirstname("Gayass");
-        modelPerson.setLastname("Daher");
+        modelPerson.setFirstname("Lars");
+        modelPerson.setLastname("Probst");
         listPerson.add(modelPerson);
         return listPerson;
     }

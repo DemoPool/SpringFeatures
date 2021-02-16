@@ -1,12 +1,3 @@
-/*******************************************************************************
- * SpringFeatures
- * Copyright (C) 2018 Lars Helmuth Probst - All Rights Reserved.
- *
- * @author Lars Helmuth Probst (Alienuser)
- * @copyright 2018 Lars Helmuth Probst
- * @link https://www.Lars-Probst.de
- ******************************************************************************/
-
 package org.service.people.model;
 
 import io.swagger.annotations.ApiModelProperty;
@@ -63,5 +54,4 @@ public class ModelPerson {
     public void setStreet(String street) {
         this.street = street;
     }
-
 }

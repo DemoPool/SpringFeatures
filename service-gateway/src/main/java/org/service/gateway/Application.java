@@ -1,12 +1,3 @@
-/*******************************************************************************
- * SpringFeatures
- * Copyright (C) 2018 Lars Helmuth Probst - All Rights Reserved.
- *
- * @author Lars Helmuth Probst (Alienuser)
- * @copyright 2018 Lars Helmuth Probst
- * @link https://www.Lars-Probst.de
- ******************************************************************************/
-
 package org.service.gateway;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -31,5 +22,4 @@ public class Application {
     public AlwaysSampler defaultSampler() {
         return new AlwaysSampler();
     }
-
 }

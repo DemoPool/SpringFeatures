@@ -1,12 +1,3 @@
-/*******************************************************************************
- * SpringFeatures
- * Copyright (C) 2018 Lars Helmuth Probst - All Rights Reserved.
- *
- * @author Lars Helmuth Probst (Alienuser)
- * @copyright 2018 Lars Helmuth Probst
- * @link https://www.Lars-Probst.de
- ******************************************************************************/
-
 package org.service.client;
 
 import io.swagger.annotations.Api;
@@ -31,5 +22,4 @@ public class Application {
     Sampler sampler() {
         return span -> true;
     }
-
 }

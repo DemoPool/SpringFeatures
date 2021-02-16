@@ -1,7 +1,7 @@
 # Spring Features
 
 ## Overview
-This proof of concept includes 8 micro services. Each of it represents an Java Spring feature. This document should help 
+This proof of concept includes 8 micro services. Each of it represents an Java Spring feature. This document helps 
 you to get an overview of the project and a guide.
 
 The repository contains the following micro services.
@@ -22,12 +22,12 @@ The following picture is summarizing the architecture of the project.
 
 ## Preparation
 Please install the following tools on your local machine:
-* Java JDK 8 ([https://www.java.com/de/download/help/download_options.xml](https://www.java.com/de/download/help/download_options.xml))
+* Java JDK 11 ([https://www.java.com/de/download/help/download_options.xml](https://www.java.com/de/download/help/download_options.xml))
 * The newest version of git ([https://git-scm.com](https://git-scm.com))
-* The newest version of maven ([https://maven.apache.org](https://maven.apache.org)
+* The newest version of maven ([https://maven.apache.org](https://maven.apache.org))
 
 ## Starting
-There are three ways to start this spring feature poc. 
+There are two ways to start this spring feature poc:
 * manual via maven
 * automatically via maven
 
@@ -39,13 +39,9 @@ mvn -DDOCKER_MACHINE_IP=127.0.0.1 -DEUREKA_PORT=8761 -DZIPKIN_PORT=9411 spring-b
 ```
 Please be sure to start the services in this order:
 1. service-eureka
-2. service-zipkin
-3. service-gateway
-4. service-monitor
-5. service-hystrix
-6. service-addressbook
-7. service-people
-8. service-client
+2. service-addressbook
+3. service-people
+4. service-client
 
 ### Automatically via maven
 To start all services via the shell-script, type the following command:

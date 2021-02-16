@@ -1,12 +1,3 @@
-/*******************************************************************************
- * SpringFeatures
- * Copyright (C) 2018 Lars Helmuth Probst - All Rights Reserved.
- *
- * @author Lars Helmuth Probst (Alienuser)
- * @copyright 2018 Lars Helmuth Probst
- * @link https://www.Lars-Probst.de
- ******************************************************************************/
-
 package org.service.people;
 
 import io.swagger.annotations.Api;
@@ -63,7 +54,4 @@ public class Application {
     public String getException() throws Exception {
         return restPeople.getException();
     }
-
 }
-
-

@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  ~ SpringFeatures
-  ~ Copyright (C) 2018 Lars Helmuth Probst - All Rights Reserved.
-  ~
-  ~ @author Lars Helmuth Probst (Alienuser)
-  ~ @copyright 2018 Lars Helmuth Probst
-  ~ @link https://www.Lars-Probst.de
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>

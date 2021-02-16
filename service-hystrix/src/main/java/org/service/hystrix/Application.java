@@ -1,12 +1,3 @@
-/*******************************************************************************
- * SpringFeatures
- * Copyright (C) 2018 Lars Helmuth Probst - All Rights Reserved.
- *
- * @author Lars Helmuth Probst (Alienuser)
- * @copyright 2018 Lars Helmuth Probst
- * @link https://www.Lars-Probst.de
- ******************************************************************************/
-
 package org.service.hystrix;
 
 import com.codahale.metrics.MetricRegistry;
@@ -65,5 +56,4 @@ public class Application {
     GraphiteSender graphite() {
         return new Graphite(new InetSocketAddress("127.0.0.1", 8768));
     }
-
 }

@@ -38,42 +38,19 @@ cd service-zipkin
 mvn clean package
 cd ..
 
-echo ---- START Eureka ----
+echo ---- START ALL PROJECTS ----
 cd service-eureka
 mvn -DDOCKER_MACHINE_IP=${DOCKER_MACHINE_IP} -DEUREKA_PORT=${EUREKA_PORT} -DZIPKIN_PORT=${ZIPKIN_PORT} spring-boot:run &
 cd ..
 
-echo ---- START Monitor ----
-cd service-monitor
-mvn -DDOCKER_MACHINE_IP=${DOCKER_MACHINE_IP} -DEUREKA_PORT=${EUREKA_PORT} -DZIPKIN_PORT=${ZIPKIN_PORT} spring-boot:run &
-cd ..
-
-echo ---- START Hystrix ----
-cd service-hystrix
-mvn -DDOCKER_MACHINE_IP=${DOCKER_MACHINE_IP} -DEUREKA_PORT=${EUREKA_PORT} -DZIPKIN_PORT=${ZIPKIN_PORT} spring-boot:run &
-cd ..
-
-echo ---- START Zipkin ----
-cd service-zipkin
-mvn -DDOCKER_MACHINE_IP=${DOCKER_MACHINE_IP} -DEUREKA_PORT=${EUREKA_PORT} -DZIPKIN_PORT=${ZIPKIN_PORT} spring-boot:run &
-cd ..
-
-echo ---- START Gateway ----
-cd service-gateway
-mvn -DDOCKER_MACHINE_IP=${DOCKER_MACHINE_IP} -DEUREKA_PORT=${EUREKA_PORT} -DZIPKIN_PORT=${ZIPKIN_PORT} spring-boot:run &
-cd ..
-
-echo ---- START Addressbook ----
 cd service-addressbook
 mvn -DDOCKER_MACHINE_IP=${DOCKER_MACHINE_IP} -DEUREKA_PORT=${EUREKA_PORT} -DZIPKIN_PORT=${ZIPKIN_PORT} spring-boot:run &
 cd ..
 
-echo ---- START People ----
 cd service-people
 mvn -DDOCKER_MACHINE_IP=${DOCKER_MACHINE_IP} -DEUREKA_PORT=${EUREKA_PORT} -DZIPKIN_PORT=${ZIPKIN_PORT} spring-boot:run &
 cd ..
 
-echo ---- START Client ----
 cd service-client
 mvn -DDOCKER_MACHINE_IP=${DOCKER_MACHINE_IP} -DEUREKA_PORT=${EUREKA_PORT} -DZIPKIN_PORT=${ZIPKIN_PORT} spring-boot:run &
 cd ..
